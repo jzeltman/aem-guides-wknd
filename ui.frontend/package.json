@@ -78,7 +78,7 @@
     "storybookAEMConfluence": false,
     "storybookAEMFoundation": false,
     "aemContentDefaultPageResourceType": "storybook/components/structure/page",
-    "aemContentDefaultPageTemplate": "../ui.content/src/main/content/jcr_root/conf/wknd/settings/wcm/templates/content-page-template",
+    "aemContentDefaultPageTemplate": "/conf/wknd/settings/wcm/templates/content-page-template",
     "aemContentDefaultPageContentPath": "/root/responsivegrid/responsivegrid",
     "aemStoryHeadingComponentResourceType": "wknd/components/content/title",
     "aemStoryHeadingComponentTitleProperty": "jcr:title",
