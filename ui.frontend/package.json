@@ -13,7 +13,7 @@
     "dev": "webpack -d --env dev --config ./webpack.dev.js && clientlib --verbose",
     "prod": "webpack -p --config ./webpack.prod.js && clientlib --verbose",
     "start": "webpack-dev-server --open --config ./webpack.dev.js",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 4501",
     "sba": "sba"
   },
   "devDependencies": {
@@ -66,7 +66,7 @@
     "storybookLocation": ".storybook",
     "storybookStoryLocation": "./stories",
     "localPackagePath": ".storybook/storybook-library/",
-    "appsPath": "../ui.apps",
+    "appsPath": "../ui.apps/src/main/content/jcr_root/apps/",
     "componentPaths": [
       "../ui.apps/src/main/content/jcr_root/apps/wknd/components/content",
       "../ui.apps/src/main/content/jcr_root/apps/wknd/components/form",
@@ -77,9 +77,9 @@
     "storybookAEMPageTemplate": false,
     "storybookAEMConfluence": false,
     "storybookAEMFoundation": false,
-    "aemContentDefaultPageResourceType": "storybook/components/structure/page",
+    "aemContentDefaultPageResourceType": "wknd/components/structure/page",
     "aemContentDefaultPageTemplate": "/conf/wknd/settings/wcm/templates/content-page-template",
-    "aemContentDefaultPageContentPath": "/root/responsivegrid/responsivegrid",
+    "aemContentDefaultPageContentPath": "/root/responsivegrid",
     "aemStoryHeadingComponentResourceType": "wknd/components/content/title",
     "aemStoryHeadingComponentTitleProperty": "jcr:title",
     "storyRoot": "Components",
