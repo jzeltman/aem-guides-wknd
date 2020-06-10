@@ -13,13 +13,13 @@
     "dev": "webpack -d --env dev --config ./webpack.dev.js && clientlib --verbose",
     "prod": "webpack -p --config ./webpack.prod.js && clientlib --verbose",
     "start": "webpack-dev-server --open --config ./webpack.dev.js",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "start-storybook -p 6006",
+    "sba": "sba"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.3.3",
     "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
-    "@storybook/html": "^5.1.11",
     "acorn": "^6.1.0",
     "aem-clientlib-generator": "^1.4.3",
     "autoprefixer": "^9.2.1",
@@ -52,6 +52,8 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "@storybook/aem": "0.0.9",
+    "@storybook/aem-cli": "0.0.9",
     "animate.css": "^3.7.2",
     "jquery": "^3.4.1",
     "normalize-scss": "^7.0.1"
@@ -59,5 +61,31 @@
   "browserslist": [
     "last 2 version",
     "> 1%"
-  ]
+  ],
+  "@storybook/aem-cli": {
+    "storybookLocation": ".storybook",
+    "storybookStoryLocation": "./stories",
+    "localPackagePath": ".storybook/storybook-library/",
+    "appsPath": "../ui.apps",
+    "componentPaths": [
+      "../ui.apps/src/main/content/jcr_root/apps/wknd/components/content",
+      "../ui.apps/src/main/content/jcr_root/apps/wknd/components/form",
+      "../ui.apps/src/main/content/jcr_root/apps/wknd/components/structure"
+    ],
+    "storybookAEMStyleSystem": true,
+    "storybookAEMGrid": false,
+    "storybookAEMPageTemplate": false,
+    "storybookAEMConfluence": false,
+    "storybookAEMFoundation": false,
+    "aemContentDefaultPageResourceType": "storybook/components/structure/page",
+    "aemContentDefaultPageTemplate": "../ui.content/src/main/content/jcr_root/conf/wknd/settings/wcm/templates/content-page-template",
+    "aemContentDefaultPageContentPath": "/root/responsivegrid/responsivegrid",
+    "aemStoryHeadingComponentResourceType": "wknd/components/content/title",
+    "aemStoryHeadingComponentTitleProperty": "jcr:title",
+    "storyRoot": "Components",
+    "packageGroup": "storybook",
+    "packageName": "storybook-library.zip",
+    "aemContentPath": "/content/wknd/us/en/storybook",
+    "createAEMContent": true
+  }
 }
